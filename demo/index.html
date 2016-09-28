@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Countdown Demo - X-Tag</title>
+  <link rel="stylesheet" type="text/css" href="x-tag-components.css" />
+  <script type="text/javascript" src="x-tag-components.js"></script>
+  <script type="text/javascript" src="../src/x-countdown.js"></script>
+</head>
+
+<body>
+  <h1>Countdown demo</h1>
+  <x-countdown></x-countdown>
+</body>
+<script>
+  document.addEventListener("WebComponentsReady", function(event) {
+      var countdown = xtag.query(document.body, 'x-countdown')[0];
+      var date = new Date();
+      date.setDate(date.getDate() + 2); 
+      countdown.date = date;
+      countdown.start();
+  });
+</script>
+
+</html>
