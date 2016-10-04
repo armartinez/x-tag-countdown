@@ -17,7 +17,7 @@
       var countdown = xtag.query(document.body, 'x-countdown')[0];
       var date = new Date();
       date.setDate(date.getDate() + 2); 
-      countdown.date = date;
+      countdown.date = date.toISOString();
       countdown.start();
   });
 </script>

@@ -10,6 +10,7 @@
     "src/x-tag-countdown.js"
   ],
   "dependencies": {
-    "x-tag-core": "*"
+    "x-tag-core": "*",
+    "jasmine-core": "*"
   }
 }
